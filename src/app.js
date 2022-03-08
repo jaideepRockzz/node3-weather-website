@@ -5,7 +5,7 @@ const geocode = require('./utility/geocode')
 const forecast = require('./utility/forecast')
 
 const app = express()
-const port = porcess.env.PORT || 2000
+const port = process.env.PORT || 2000
 
 const pathvar = path.join(__dirname,'../public')
 const viewspath = path.join(__dirname,'../templates/views')
