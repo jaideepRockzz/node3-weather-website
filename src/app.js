@@ -5,6 +5,7 @@ const geocode = require('./utility/geocode')
 const forecast = require('./utility/forecast')
 
 const app = express()
+const port = porcess.env.PORT || 2000
 
 const pathvar = path.join(__dirname,'../public')
 const viewspath = path.join(__dirname,'../templates/views')
@@ -81,7 +82,7 @@ res.render('error',{
 }) 
 })
 
-app.listen(2000,() => {
-    console.log('Server is running')
+app.listen(port,() => {
+    console.log('Server is running on port'+port)
 })
 
